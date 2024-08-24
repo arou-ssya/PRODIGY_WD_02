@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Stopwatch & Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <section class="stopwatch">
+            <h1 id="stopwatch-display">00:00:00</h1>
+            <div class="controls">
+                <button id="start-stopwatch-btn" class="btn">Start</button>
+                <button id="pause-stopwatch-btn" class="btn" disabled>Pause</button>
+                <button id="lap-btn" class="btn" disabled>Lap</button>
+                <button id="reset-stopwatch-btn" class="btn" disabled>Reset</button>
+            </div>
+            <div class="laps">
+                <h2>Laps</h2>
+                <ul id="laps-list"></ul>
+            </div>
+        </section>
+
+      
+        <section class="countdown">
+            <h1 id="countdown-display">00:00:00</h1>
+            <div class="input-group">
+                <input type="number" id="hours" placeholder="HH" min="0" max="99">
+                <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+                <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+            </div>
+            <div class="controls">
+                <button id="set-timer-btn" class="btn">Set Timer</button>
+                <button id="start-timer-btn" class="btn" disabled>Start Timer</button>
+                <button id="pause-timer-btn" class="btn" disabled>Pause Timer</button>
+                <button id="reset-timer-btn" class="btn" disabled>Reset Timer</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
